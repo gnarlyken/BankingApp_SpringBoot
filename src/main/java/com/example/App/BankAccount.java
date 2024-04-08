@@ -3,6 +3,7 @@ import jakarta.persistence.*;
 import java.util.UUID;
 
 @Entity
+@Table(name = "bank_accounts")
 public class BankAccount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,7 +13,7 @@ public class BankAccount {
     private double balance;
 
     // Constructors, getters, and setters
-    public BankAccount(String id, String name, double balance) {}
+    public BankAccount(Long id, String name, double balance) {}
 
     public BankAccount(String name, double balance) {
         this.name = name;

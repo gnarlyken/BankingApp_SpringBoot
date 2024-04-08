@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Bank Account</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div class="container">
     <h1>Create Bank Account</h1>
-    <form id="createAccountForm"  action = "/congratulations">
-    <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <form id="createAccountForm" action="/create-account" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
         <label for="balance">Balance:</label>
-        <input type="number" id="balance" name="balance" required>
+        <input type="number" id="balance" name="balance" required><br><br>
         <button type="submit">Create Account</button>
     </form>
     <div id="message"></div>
 </div>
-
 </body>
 </html>
